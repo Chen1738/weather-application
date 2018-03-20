@@ -14,6 +14,8 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -28,7 +30,30 @@ public class MainActivity extends AppCompatActivity {
         new DownloadUpdate().execute();
     }
 
+    public void refresh(View v){
+        //refresh remperature,the date and the date of the week
 
+        Date date = new Date(new Date().getTime());
+        SimpleDateFormat dformat = new SimpleDateFormat("yyyy-MM-dd");
+        String time = dformat.format(date);
+        int weekday = date.getDay();
+        String weekd = "null";
+
+        switch(weekday){
+            case 0:weekd = "Sunday";break;
+            case 1:weekd = "Monday";break;
+            case 2:weekd = "Tuesday";break;
+            case 3:weekd = "Wednsday";break;
+            case 4:weekd = "Thursday";break;
+            case 5:weekd = "Friday";break;
+            case 6:weekd = "Saturday";break;
+
+        }
+
+        ((TextView) findViewById(R.id.tv_date)).setText(time);
+        ((TextView) findViewById(R.id.week)).setText(weekd);
+        ((TextView) findViewById(R.id.temperature_of_the_day)).setText("27");
+    }
     private class DownloadUpdate extends AsyncTask<String, Void, String> {
 
 
