@@ -1,8 +1,8 @@
-#assignment 001
+assignment 001
 
-###1.the new icon to the application, 
-###2.the blue background for 'mon'
-###3.adding the refresh button, when the refresh button is pressed, the temperature, the date and the day of the week are all updated.
+1.the new icon to the application, 
+2.the blue background for 'mon'
+3.adding the refresh button, when the refresh button is pressed, the temperature, the date and the day of the week are all updated.
 
 
 
