@@ -1,10 +1,9 @@
-assignment 001
+assignment 002
 
-1.the new icon to the application, 
-2.the blue background for 'mon'
-3.adding the refresh button, when the refresh button is pressed, the temperature, the date and the day of the week are all updated.
+part 1
 
+process:
+network is unconnected at first,if you click update now,It will toast you "network unconnected".And then I start the network,click the update and "go to calendar", it diaplays the current temperature,the location and temperature is changed.
 
-
-![demo](https://github.com/Chen1738/weather-application/blob/master/demo.gif)
+![weatherapp-demo](https://github.com/Chen1738/weather-application/blob/master/weatherapp-demo.gif)
 
