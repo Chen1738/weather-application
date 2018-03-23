@@ -92,7 +92,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Location"
+                    android:text="beijing"
                     android:textColor="@android:color/white"
                     android:textStyle="bold" />
 
@@ -187,10 +187,11 @@
                 app:srcCompat="@drawable/rainy_small" />
 
             <TextView
+                android:id="@+id/Mon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:background="@drawable/blueback"
+                android:gravity="center"
                 android:text="mon"
                 android:textAllCaps="true"
                 android:textColor="#909090" />
@@ -209,6 +210,7 @@
                 app:srcCompat="@drawable/partly_sunny_small" />
 
             <TextView
+                android:id="@+id/Tue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -230,6 +232,7 @@
                 app:srcCompat="@drawable/windy_small" />
 
             <TextView
+                android:id="@+id/Thu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -251,6 +254,7 @@
                 app:srcCompat="@drawable/sunny_small" />
 
             <TextView
+                android:id="@+id/Fri"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
